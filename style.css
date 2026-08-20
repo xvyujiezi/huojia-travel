@@ -149,6 +149,15 @@ section{padding:56px 0}
 .detail-body p:last-child{margin-bottom:0}
 
 /* 交通 */
+/* 视频展示 */
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.video-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.video-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(43,37,33,.08)}
+.video-card video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover}
+.video-info{padding:18px 20px}
+.video-info h3{font-family:var(--serif);font-size:18px;margin-bottom:6px}
+.video-info p{font-size:14px;color:var(--sub);line-height:1.7}
+
 .traffic{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .t-item{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
 .t-item h3{font-family:var(--serif);font-size:17px;margin-bottom:8px;color:var(--cinnabar)}
@@ -205,7 +214,7 @@ footer b{color:#FBF6EA;font-family:var(--serif);font-size:20px}
 @media (max-width:920px){
   .hero-grid{grid-template-columns:1fr}
   .hero h1{font-size:40px}
-  .quad,.spots,.ich-list,.traffic,.entry-grid{grid-template-columns:1fr 1fr}
+  .quad,.spots,.ich-list,.traffic,.entry-grid,.video-grid{grid-template-columns:1fr 1fr}
   .routes{grid-template-columns:1fr}
   .tl-item{grid-template-columns:1fr}
   .nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:8px 16px}
@@ -214,7 +223,7 @@ footer b{color:#FBF6EA;font-family:var(--serif);font-size:20px}
   .menu-btn{display:block}
 }
 @media (max-width:560px){
-  .quad,.spots,.ich-list,.traffic,.entry-grid{grid-template-columns:1fr}
+  .quad,.spots,.ich-list,.traffic,.entry-grid,.video-grid{grid-template-columns:1fr}
   .q-img{height:200px;border-radius:14px;margin-bottom:14px}
   .q-card{padding:22px 18px}
   .q-card h3{font-size:20px}
