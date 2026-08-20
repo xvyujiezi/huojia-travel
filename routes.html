@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旅游路线 · 获嘉县</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="seal">获</span>
+      <span class="brand-text"><b>获嘉县</b><small>HUOJIA · 千年牧野</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="history.html">历史脉络</a>
+      <a href="life.html">吃喝玩乐</a>
+      <a href="spots.html">核心景点</a>
+      <a href="routes.html" class="active">旅游路线</a>
+      <a href="wuwang.html">武王伐纣</a>
+    </nav>
+    <div class="nav-right">
+      <button class="ai-btn" onclick="openChat()">✦ AI 文旅助手</button>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="pagehead">
+  <div class="wrap">
+    <div class="eyebrow">旅游路线</div>
+    <h1>跟着路线走 · 少走弯路</h1>
+  </div>
+</div>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="routes">
+      <div class="route">
+        <span class="tag" style="background:#9E3B2E">1 日游</span>
+        <h3>经典一日 · 寻盟访古</h3>
+        <ol>
+          <li>上午 · 同盟山武王庙</li>
+          <li>中午 · 县城吃饸饹条</li>
+          <li>傍晚 · 同盟古镇看夜景</li>
+        </ol>
+      </div>
+      <div class="route">
+        <span class="tag" style="background:#B0894A">3 日游</span>
+        <h3>深度三日 · 慢游小城</h3>
+        <ol>
+          <li>Day1 · 同盟山 + 饸饹条</li>
+          <li>Day2 · 同盟古镇全天</li>
+          <li>Day3 · 凤凰楼 + 城隍庙 + 购特产（黑豆、饸饹条礼盒）返程</li>
+        </ol>
+      </div>
+    </div>
+    <p style="margin-top:20px;font-size:13px;color:var(--muted)">最佳季节：春秋两季（4–5 月、9–10 月）。</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">交通区位</div>
+      <h2>怎么来获嘉</h2>
+    </div>
+    <div class="traffic">
+      <div class="t-item"><h3>区位</h3><p>距省会郑州约 60 公里、距新乡约 18 公里、距焦作约 40 公里，与郑州市隔河相望。</p></div>
+      <div class="t-item"><h3>铁路</h3><p>京广铁路、新焦铁路贯通全境；境内有亢村、忠义、获嘉、狮子营 4 个火车站。</p></div>
+      <div class="t-item"><h3>公路 · 航空</h3><p>菏宝高速贯通全境，东距京港澳高速约 20 公里；南距郑州新郑国际机场约 80 公里。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div><b>获嘉县</b><div class="f-note">南临黄河 · 北依太行 | 中国同盟（封神）文化发源地 · 宁氏祖根地</div></div>
+      <div class="f-note"><b style="font-size:14px">出行提示</b><br>门票、开放时间、交通班次等易变信息，出行前请以官方或现场最新发布为准。</div>
+    </div>
+    <div class="f-line"></div>
+    <div class="f-copy">本页内容依据获嘉县人民政府门户网站、新乡市人民政府门户网站等公开资料整理，仅供宣传参考。</div>
+  </div>
+</footer>
+
+<div class="chat-mask" id="chatMask" onclick="if(event.target===this)closeChat()">
+  <div class="chat-panel">
+    <div class="chat-head"><span>✦</span><span class="tt">AI 文旅智能体</span><span class="st">在线</span><button class="x" onclick="closeChat()">×</button></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg ai">你好，我是获嘉文旅智能体，可以帮你规划游程、推荐美食景点。</div>
+      <div class="chips">
+        <button onclick="ask('3天研学路线')">3天研学路线</button>
+        <button onclick="ask('特色美食推荐')">特色美食推荐</button>
+        <button onclick="ask('武王伐纣玩法')">武王伐纣玩法</button>
+      </div>
+    </div>
+    <div class="chat-input"><input id="chatInput" placeholder="描述你的研学需求…"><button onclick="ask(document.getElementById('chatInput').value)">↑</button></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>核心景点 · 获嘉县</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="seal">获</span>
+      <span class="brand-text"><b>获嘉县</b><small>HUOJIA · 千年牧野</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="history.html">历史脉络</a>
+      <a href="life.html">吃喝玩乐</a>
+      <a href="spots.html" class="active">核心景点</a>
+      <a href="routes.html">旅游路线</a>
+      <a href="wuwang.html">武王伐纣</a>
+    </nav>
+    <div class="nav-right">
+      <button class="ai-btn" onclick="openChat()">✦ AI 文旅助手</button>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="pagehead">
+  <div class="wrap">
+    <div class="eyebrow">核心景点</div>
+    <h1>来获嘉 · 看什么</h1>
+  </div>
+</div>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="spots">
+      <div class="spot">
+        <div class="spot-img"><img src="images/hero.jpg" alt="同盟山武王庙"></div>
+        <h3>同盟山武王庙</h3>
+        <div class="meta">免费开放（部分体验项目收费） · 县城东约 3 公里</div>
+        <p>全国唯一祭祀周武王的庙宇，明清建筑群（三进五院 40 余间殿堂），牧野之战盟誓地。开放时间：5–9 月 7:00–17:00，10–4 月 8:00–17:00。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-img"><img src="images/guzhen.jpg" alt="同盟古镇·袁家村"></div>
+        <h3>同盟古镇 · 袁家村</h3>
+        <div class="meta">免费 · 亢村镇 · 9:00–22:00</div>
+        <p>仿古建筑 + 特色美食，青石板古巷、非遗作坊，建议留到晚上看夜景。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-img"><img src="images/fenghuanglou.jpg" alt="凤凰楼"></div>
+        <h3>凤凰楼</h3>
+        <div class="meta">建议白天前往</div>
+        <p>登高俯瞰获嘉城景。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-img"><img src="images/chenghuangmiao.jpg" alt="城隍庙"></div>
+        <h3>城隍庙</h3>
+        <div class="meta">明代古建筑 · 县城内</div>
+        <p>明代古建筑，位于县城内。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-img"><img src="images/waterpark.png" alt="贤和庄水上游乐园"></div>
+        <h3>贤和庄水上游乐园</h3>
+        <div class="meta">亲子向 · 营业时间见园区公示</div>
+        <p>水上游乐项目，适合亲子游玩。</p>
+      </div>
+      <div class="spot">
+        <div class="spot-img"><img src="images/pasture.png" alt="欢乐多乐园·三只小羊牧场乐园"></div>
+        <h3>欢乐多乐园 · 三只小羊牧场乐园</h3>
+        <div class="meta">亲子向 · 营业时间见园区公示</div>
+        <p>亲子游乐与牧场体验。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">游玩提示</div>
+      <h2>出行前须知</h2>
+    </div>
+    <div class="traffic">
+      <div class="t-item"><h3>门票</h3><p>同盟山武王庙、同盟古镇·袁家村免费开放（部分体验项目收费）。</p></div>
+      <div class="t-item"><h3>开放时间</h3><p>武王庙 5–9 月 7:00–17:00，10–4 月 8:00–17:00；同盟古镇 9:00–22:00。</p></div>
+      <div class="t-item"><h3>温馨提示</h3><p>门票、开放时间、交通班次等易变信息，出行前请以官方或现场最新发布为准。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div><b>获嘉县</b><div class="f-note">南临黄河 · 北依太行 | 中国同盟（封神）文化发源地 · 宁氏祖根地</div></div>
+      <div class="f-note"><b style="font-size:14px">出行提示</b><br>门票、开放时间、交通班次等易变信息，出行前请以官方或现场最新发布为准。</div>
+    </div>
+    <div class="f-line"></div>
+    <div class="f-copy">本页内容依据获嘉县人民政府门户网站、新乡市人民政府门户网站等公开资料整理，仅供宣传参考。</div>
+  </div>
+</footer>
+
+<div class="chat-mask" id="chatMask" onclick="if(event.target===this)closeChat()">
+  <div class="chat-panel">
+    <div class="chat-head"><span>✦</span><span class="tt">AI 文旅智能体</span><span class="st">在线</span><button class="x" onclick="closeChat()">×</button></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg ai">你好，我是获嘉文旅智能体，可以帮你规划游程、推荐美食景点。</div>
+      <div class="chips">
+        <button onclick="ask('3天研学路线')">3天研学路线</button>
+        <button onclick="ask('特色美食推荐')">特色美食推荐</button>
+        <button onclick="ask('武王伐纣玩法')">武王伐纣玩法</button>
+      </div>
+    </div>
+    <div class="chat-input"><input id="chatInput" placeholder="描述你的研学需求…"><button onclick="ask(document.getElementById('chatInput').value)">↑</button></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

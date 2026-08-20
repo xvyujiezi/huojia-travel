@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>武王伐纣 · 获嘉县</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html">
+      <span class="seal">获</span>
+      <span class="brand-text"><b>获嘉县</b><small>HUOJIA · 千年牧野</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="history.html">历史脉络</a>
+      <a href="life.html">吃喝玩乐</a>
+      <a href="spots.html">核心景点</a>
+      <a href="routes.html">旅游路线</a>
+      <a href="wuwang.html" class="active">武王伐纣</a>
+    </nav>
+    <div class="nav-right">
+      <button class="ai-btn" onclick="openChat()">✦ AI 文旅助手</button>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="ww">
+      <img class="ww-bg" src="images/wuwang.jpg" alt="武王伐纣牧野之战">
+      <div class="inner">
+        <div class="eyebrow">武王伐纣 · 牧野之战</div>
+        <h2>千年盟誓<br>奠定周朝八百年江山</h2>
+        <p>3000 多年前，周武王伐纣会盟诸侯于获嘉，捧土筑坛、誓师盟誓，谋成牧野之战，奠定周朝八百年江山。获嘉由此成为中国同盟（封神）文化的发源地，同盟山、武王庙即其千年物证。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">关联景点</div>
+      <h2>寻迹 · 同盟遗迹</h2>
+    </div>
+    <div class="spots">
+      <div class="spot">
+        <h3>同盟山武王庙</h3>
+        <div class="meta">免费开放（部分体验项目收费）</div>
+        <p>全国唯一祭祀周武王的庙宇，明清建筑群，牧野之战盟誓地。</p>
+      </div>
+      <div class="spot">
+        <h3>同盟古镇 · 袁家村</h3>
+        <div class="meta">免费 · 亢村镇</div>
+        <p>仿古建筑 + 特色美食，青石板古巷、非遗作坊。</p>
+      </div>
+      <div class="spot">
+        <h3>同盟山遗址</h3>
+        <div class="meta">省级文物保护单位</div>
+        <p>周武王伐纣会盟诸侯、捧土筑坛的历史遗存。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">非遗体验</div>
+      <h2>与历史对话</h2>
+    </div>
+    <div class="ich-list">
+      <div class="ich"><span class="lv">省级</span><b>马皮舞</b></div>
+      <div class="ich"><span class="lv">省级</span><b>杨庄木板年画</b></div>
+      <div class="ich"><span class="lv">省级</span><b>罗汉拳</b></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div><b>获嘉县</b><div class="f-note">南临黄河 · 北依太行 | 中国同盟（封神）文化发源地 · 宁氏祖根地</div></div>
+      <div class="f-note"><b style="font-size:14px">出行提示</b><br>门票、开放时间、交通班次等易变信息，出行前请以官方或现场最新发布为准。</div>
+    </div>
+    <div class="f-line"></div>
+    <div class="f-copy">本页内容依据获嘉县人民政府门户网站、新乡市人民政府门户网站等公开资料整理，仅供宣传参考。</div>
+  </div>
+</footer>
+
+<div class="chat-mask" id="chatMask" onclick="if(event.target===this)closeChat()">
+  <div class="chat-panel">
+    <div class="chat-head"><span>✦</span><span class="tt">AI 文旅智能体</span><span class="st">在线</span><button class="x" onclick="closeChat()">×</button></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg ai">你好，我是获嘉文旅智能体，可以帮你规划游程、推荐美食景点。</div>
+      <div class="chips">
+        <button onclick="ask('3天研学路线')">3天研学路线</button>
+        <button onclick="ask('特色美食推荐')">特色美食推荐</button>
+        <button onclick="ask('武王伐纣玩法')">武王伐纣玩法</button>
+      </div>
+    </div>
+    <div class="chat-input"><input id="chatInput" placeholder="描述你的研学需求…"><button onclick="ask(document.getElementById('chatInput').value)">↑</button></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
